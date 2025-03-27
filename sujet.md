@@ -1,17 +1,18 @@
 # Sujet Evaluation vision par ordinateur UV RobVis 2025
 
-Ce sujet d'1h30 comporte deux volets.
+Ce sujet de 2h00 comporte deux volets.
 
 Dans le premier volet, il s'agit de détecter et de compter les petis dragibus par couleur.
 
 Dans le second volet (Etape 1 à 3), il s'agit de développer le script python capable de détecter les **objets présents** 
-dans une séquence d'images prise à partir la caméra de surveillance d'un carrefour et de les classer en 3 classes (voiture/piéton/moto).
+dans une séquence d'images prise à partir la caméra de surveillance d'un carrefour et de les classer en 3 classes (voiture/piéton).
 
 Pour cela, vous vous appuierez très majoritairement sur les codes que vous avez testés durant les séances de TP précédentes et tout particulièrement
-ce qui vous a été montré en matière de segmentation et de détection d'objets. Tout est possiblesauf l'usage de ChatGPT ou tout autre modèle génératif.
+ce qui vous a été montré en matière de segmentation et de détection d'objets. Tout est possible sauf l'usage de ChatGPT ou tout autre modèle génératif.
 Vous avez le droit à tous les codes que vous avez réalisés.  
 
 Vous ferez tous vos tests du volet 2 sur la vidéo que je vous ai fournie (***carrrefour640x360.mp4***) et qui est dans le zip téléchargeable :
+
 ![](carrefour.gif)
 
 Attention c'est un travail individuel. Il est question d'évaluer ce que chacun d'entre vous a retenu de cette partie de l'UV.
@@ -56,13 +57,16 @@ Dans l'étape 1, vous avez réalisé la détection des objets présents dans la 
 
 ### Etape 3
 
-Je vous demande de modifier la partie du code de l'étape 2 afin de produire le script *volet2_script3.py* capable finalement de compter dans chaque image les instances des deux classes considérées (voiture, piéton). Pour cela vous pourrez extraire des caractéristiques de forme sur les ensembles connexes trouvés précédemment. Vous pourrez, si nécessaire, choisir une ou plusieurs caractéristiques qui permettrons de mieux modéliser ces deux classes. 
+Je vous demande de modifier la partie du code de l'étape 2 afin de produire le script *volet2_script3.py* capable finalement de compter dans chaque image les instances des deux classes considérées (voiture, piéton). Pour cela vous pourrez extraire des caractéristiques de forme sur les ensembles connexes trouvés précédemment. Vous pourrez, si nécessaire, choisir une ou plusieurs caractéristiques qui permettrons de modéliser le mieux ces deux classes. 
 
 Afin d'illustrer le résultat de votre algorithme,vous dessinerez le contour des véhicules motorisés en rouge et celui des piétons en vert sur chaque image de la vidéo.
 
 ### Etape 4
 
+Dans cette dernière étape, proposez un algorithme de comptage des objets qui traversent le milieu du carrefour de gauche à droite ou de droite à gauche. Vous ferez ce comptage pour chaque classe (*volet2_script4.py*).
 
+Attention, pour réaliser ce comptage vous devrez mettre en place un algorithme de suivi simple de chaque objet détecté dans l'étape 3 afin de limiter le surcomptage et aussi de déterminer le sens de la traversée.
 
+Afficher 4 compteurs : un compteur gauche/droite et un compteur droite/gauche pour chacune des deux classes.
 
 **BON COURAGE A VOUS ET BONNE CONTINUATION !**
